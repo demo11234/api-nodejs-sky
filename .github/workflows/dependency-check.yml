@@ -8,8 +8,8 @@ jobs:
       - uses: AutoModality/action-clean@v1
       - name: Checkout
         uses: actions/checkout@v2
-     # - name: Install node_modules
-      #  run: npm i
+      - name: Install node_modules
+        run: npm i
       - name: Depcheck
         uses: dependency-check/Dependency-Check_Action@main
         id: Depcheck
